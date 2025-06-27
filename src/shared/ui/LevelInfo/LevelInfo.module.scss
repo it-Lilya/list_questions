@@ -1,0 +1,35 @@
+@use '../../styles/lib/breakpoints.scss' as breakpoints;
+
+.container_info {
+  margin-top: 24px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  
+  @media (max-width: breakpoints.$screen-lg) {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 3px;
+  }
+}
+
+.info {
+  size: 14px;
+  padding: 7px 10px;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media (max-width: breakpoints.$screen-lg) {
+    display: flex;
+    border-radius: 8px;
+  }
+}
+.info > span {
+  margin-left: 10px;
+}

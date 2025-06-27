@@ -1,0 +1,36 @@
+.container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container > h4 {
+  color: #474747;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.container > div {
+  margin: 0;
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.skills_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.keywords {
+  color: #6a0bff;
+  font-weight: 400;
+  user-select: none;
+}
+
+.btn > button {
+  border: 1px solid #6a0bff;
+  cursor: auto;
+}

@@ -1,0 +1,113 @@
+@use '../../../shared/styles/lib/breakpoints.scss' as breakpoints;
+
+.container {
+  padding-bottom: 30px;
+
+  margin: 24px auto 30px auto;
+
+  @media (min-width: calc(breakpoints.$screen-md - 1px)) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15px;
+    max-width: 84.5%;
+  }
+
+  @media (max-width: calc(breakpoints.$screen-lg - 1px)) {
+    max-width: 92%;
+  }
+}
+
+.btn_prev {
+  border: none;
+  background-color: transparent;
+  height: 20px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 18px;
+  color: #6a0bff;
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+span.icon_prev {
+  background-image: url("../../../shared/assets/icons/accordeon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-90deg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.info_container {
+  @media (min-width: breakpoints.$screen-lg) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+
+.additionally {
+  background: white;
+  border-radius: 24px;
+  box-shadow: -1px 1px 5px -1px rgba(34, 60, 80, 0.13);
+  padding: 24px;
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (max-width: calc(breakpoints.$screen-lg - 1px)) {
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    &.open {
+      display: none;
+    }
+  }
+  @media (max-width: (breakpoints.$screen-md - 1px)) {
+    width: 100%;
+  }
+}
+
+.additionally > button {
+  @media (min-width: breakpoints.$screen-lg) {
+    display: none;
+  }
+  @media (max-width: calc(breakpoints.$screen-lg - 1px)) {
+    background: url("../../../shared/assets/icons/close.png") no-repeat center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
+
+.author {
+  bottom: -50px;
+  position: relative;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  color: #303030;
+  font-size: 14px;
+
+  @media (max-width: calc(breakpoints.$screen-lg - 1px)) {
+    margin-top: 10px;
+    position: static;
+    text-align: left;
+  }
+}
+.author span {
+  color: #6a0bff;
+  margin-left: 5px;
+}

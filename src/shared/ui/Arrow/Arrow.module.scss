@@ -1,0 +1,33 @@
+@use '../../styles/lib/breakpoints.scss' as breakpoints;
+
+.arrow_contain {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 20px;
+  height: 24px;
+
+  // @media (max-width: breakpoints.$screen-sm) {
+  //   // padding-right: 10px;
+  // }
+}
+
+.btn {
+  position: relative;
+  font-weight: bold;
+  color: #6a0bff;
+  background-color: white;
+  border: none;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.btn span {
+  position: absolute;
+  width: 24px;
+  background-image: url('../../assets/icons/Vector.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  height: 100%;
+}

@@ -1,0 +1,53 @@
+@use "../../../shared/styles/lib/breakpoints.scss" as breakpoints;
+
+.container {
+  display: block;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: -1px 1px 5px -1px rgba(34, 60, 80, 0.13);
+  padding: 24px;
+
+  @media (min-width: calc(breakpoints.$screen-lg - 1px)) {
+    min-width: 392px;
+    width: 31%;
+  }
+  @media (min-width: calc(breakpoints.$screen-md - 1px)) and (max-width: breakpoints.$screen-lg) {
+    width: 392px;
+  }
+
+  @media (max-width: calc(breakpoints.$screen-lg - 1px)) {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+    max-width: 30%;
+    width: 328px;
+  }
+
+  @media (min-width: breakpoints.$screen-sm) and (max-width: calc(breakpoints.$screen-lg - 1px)) {
+    max-width: 328px;
+  }
+  @media (max-width: breakpoints.$screen-sm) {
+    min-width: 100%;
+  }
+}
+
+.hidden_filter {
+  display: none;
+}
+
+.close {
+  background-image: url("../../../shared/assets/icons/close.png");
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  margin-left: 94%;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+
+  @media (min-width: breakpoints.$screen-lg) {
+    display: none;
+  }
+}

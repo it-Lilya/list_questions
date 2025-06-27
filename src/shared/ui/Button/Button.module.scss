@@ -1,0 +1,25 @@
+.Button {
+  height: 40px;
+  color: #303030;
+  background-color: transparent;
+  border: 1px solid #bababa;
+  border-radius: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 7px;
+
+  align-items: center;
+
+  &.active {
+    background-color: #5a0bff;
+    color: white;
+  }
+}
+
+.icon img {
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

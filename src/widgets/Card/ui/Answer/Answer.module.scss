@@ -1,0 +1,67 @@
+.container {
+  padding: 24px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: -1px 1px 5px -1px rgba(34, 60, 80, 0.13);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #303030;
+}
+.header {
+  font-weight: 500;
+  font-size: 20px;
+}
+.container > div {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.long {
+  max-height: 530px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.5s ease;
+}
+.long::after {
+  content: "";
+  height: 40px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, transparent 1%, rgb(255, 255, 255));
+}
+.long.expanded {
+  max-height: 13000px;
+}
+.long.expanded::after {
+  display: none;
+}
+
+.open,
+.close {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  font-size: 14px;
+}
+
+.open span,
+.close span {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../../shared/assets/icons/accordeon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+.open span {
+  transform: rotate(0deg);
+}
+.close span {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,13 @@
+@use '../../../../shared/styles/lib/breakpoints.scss' as breakpoints;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  @media (min-width: breakpoints.$screen-lg) {
+    width: 64%;
+    min-width: 804px;
+  }
+}

@@ -1,0 +1,30 @@
+.container {
+  margin-top: 25px;
+  padding-right: 15px;
+}
+.btn_container {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 190px;
+  overflow: hidden;
+}
+.open {
+  max-height: 800px;
+}
+.header {
+  font-size: 14px;
+  font-weight: 400;
+  color: #474747;
+}
+
+.open_btn {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5509cc;
+  border: none;
+  background-color: transparent;
+  text-decoration-line: underline;
+}

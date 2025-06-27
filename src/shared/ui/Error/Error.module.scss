@@ -1,0 +1,30 @@
+.error {
+  margin: 10% auto 10% auto;
+  color: #ad7dfa;
+  font-size: 30px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 20px;
+  cursor: pointer;
+  border: 1px solid #6a0bff;
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 15px;
+  font-size: 20px;
+  color: #6a0bff;
+  box-shadow: -1px 1px 15px -1px rgba(34, 60, 80, 0.2);
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn:hover {
+  border: 2px solid #6a0bff;
+  font-weight: 500;
+  box-shadow: -1px 1px 15px -1px rgba(34, 60, 80, 0.4);
+}
